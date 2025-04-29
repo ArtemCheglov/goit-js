@@ -857,3 +857,18 @@
 //     return arr.find(player => player.name === name)
 // }
 // console.log(findPlayerByName(players, "Ajax"));
+
+// Збільшити кількість годин гравця по id.
+// function increasePlayerTime(arr, id, time) {
+//     return arr.map((el) => {
+//         if (id === el.id) {
+//             return {
+//                 ...el,
+//                 timePlayed: el.timePlayed + time
+//             }
+//         }
+//         return el
+//     })
+// }
+
+// console.log(increasePlayerTime(players, 'player-1', 1000));
