@@ -120,7 +120,7 @@ console.log(getInactiveUsers(users));
 
 //5
 const getUserWithEmail = (users, email) => {
-    return users.find(({ userEmail }) => userEmail === email);
+    return users.find((user) => user.email === email);
 };
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));

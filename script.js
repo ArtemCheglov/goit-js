@@ -752,6 +752,7 @@
 // "address" та "rating".Додайте до об'єкту
 // метод, який дозволить змінювати 
 // значення властивостей "address" та "rating"
+
 // const restaurant = {
 //     name: "Kitayka",
 //     cuisine: "chinese",
@@ -793,8 +794,7 @@
 
 // console.log(getAllNames(friends));
 
-// Написати функцію яка буде повертати масив імен друзів які 
-// онлайн.
+// Написати функцію яка буде повертати масив імен друзів які онлайн.
 
 // const friends = [
 //     { name: 'Mango', online: false },
@@ -823,24 +823,16 @@
 // };
 // const { name, age, email } = user;
 
-// const players = [
-//     { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
-//     { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
-//     { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
-//     { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
-//     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
-// ];
-
-// // Отримати масив імен всіх гравців.
+// Отримати масив імен всіх гравців.
 // const playersNames = players.map((player) => player.name);
 // console.log(playersNames);
 
-// // Отримати масив всіх гравців онлайн.
+// Отримати масив всіх гравців онлайн.
 // const playersOnline = players.filter((player) => player.online);
 // console.log(playersOnline);
 
-// // Збільшити кількість поінтів кожного гравця на 10% 
-// // (розпорошуємо старий об 'єкт).
+// Збільшити кількість поінтів кожного гравця на 10% 
+// (розпорошуємо старий об 'єкт).
 // const pointsUpdate = players.map((player) => {
 //     return {
 //         ...player,
@@ -872,3 +864,26 @@
 // }
 
 // console.log(increasePlayerTime(players, 'player-1', 1000));
+
+const players = [
+    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+];
+
+// Перевірити чи всі гравці мають час більше 200
+
+// const playersAbove200 = players.every((player) => player.timePlayed > 200);
+// console.log(playersAbove200);
+
+// Отримати масив всіх хардкорних гравців з часом більше 250
+
+// const playersAbove250 = players.filter((player) => player.timePlayed > 250);
+// console.log(playersAbove250);
+
+// function getNames(players) {
+//     return players.map((player) => players.name);
+// };
+// console.log(getNames(players));
