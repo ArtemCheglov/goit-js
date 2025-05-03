@@ -865,13 +865,13 @@
 
 // console.log(increasePlayerTime(players, 'player-1', 1000));
 
-const players = [
-    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
-    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
-    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
-    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
-    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
-];
+// const players = [
+//     { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//     { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+// ];
 
 // Перевірити чи всі гравці мають час більше 200
 
@@ -887,3 +887,38 @@ const players = [
 //     return players.map((player) => players.name);
 // };
 // console.log(getNames(players));
+
+// Об 'єднати два масиви в один без повторень.
+// const array1 = [1, 2, 3, 44, 4, 5, 6, 6, 7];
+// const array2 = [5, 12, 3, 14, 4, 5, 6, 6, 7];
+
+// const newArr = [...array1, ...array2].filter((num, index, arr) => {
+//     return arr.indexOf(num) === index
+// })
+
+// const newArr = [...new Set([...array1, ...array2])]
+
+// console.log(newArr);
+
+// Відсортувати масив об 'єктів за алфавітом в полі name:
+// const arr = [
+//     { name: 'John', age: 32 },
+//     { name: 'Jane', age: 26 },
+//     { name: 'Mike', age: 42 },
+//     { name: 'Emily', age: 29 }
+// ];
+
+// const arrSort = arr.sort((a, b) => a.name.localeCompare(b.name))
+// console.log(arrSort);
+
+// Зібрати всі теги з твітів.
+// const tweets = [
+//     { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//     { id: '001', likes: 2, tags: ['html', 'css'] },
+//     { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//     { id: '003', likes: 8, tags: ['css', 'react'] },
+//     { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+
+// const allTags = tweets.flapMap(tweet => tweet.tags)
+// console.log(allTags);
