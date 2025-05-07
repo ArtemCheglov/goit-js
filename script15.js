@@ -7,7 +7,7 @@ console.log(calculateTotalBalance(users));
 
 //2
 const getUsersWithFriend = (users, friendName) => {
-    return users.filter(({ friends }) => friends.(friendName)).map(({ name }) => name)
+    return users.filter(({ friends }) => friends(friendName)).map(({ name }) => name)
 };
 
 console.log(getUsersWithFriend(users, 'Briana Decker'));
@@ -22,7 +22,7 @@ console.log(getNamesSortedByFriendsCount(users));
 
 //4
 const getSortedUniqueSkills = users => {
-    return users
+    return users.flapMap(({ skills }) => skills).sort()
 };
 
 console.log(getSortedUniqueSkills(users));

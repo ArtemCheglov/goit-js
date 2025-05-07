@@ -920,5 +920,5 @@
 //     { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
 // ];
 
-// const allTags = tweets.flapMap(tweet => tweet.tags)
+// const allTags = tweets.flapMap(tweet => tweets.tags)
 // console.log(allTags);
