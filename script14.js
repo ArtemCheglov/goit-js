@@ -104,7 +104,7 @@ console.log(getUsersWithEyeColor(users, 'blue'));
 //3
 const getUsersWithGender = (users, gender) => {
     return users
-        .filter(({ userGender }) => userGender === gender)
+        .filter(({ gender: userGender }) => userGender === gender)
         .map(({ name }) => name);
 };
 
@@ -112,7 +112,7 @@ console.log(getUsersWithGender(users, 'male'));
 
 //4
 const getInactiveUsers = users => {
-    return users.filter(({ isActive }) => isActive !== isActive);
+    return users.filter(({ isActive }) => !isActive);
 };
 
 console.log(getInactiveUsers(users));
@@ -120,7 +120,7 @@ console.log(getInactiveUsers(users));
 
 //5
 const getUserWithEmail = (users, email) => {
-    return users.find((user) => user.email === email);
+    return users.find((userEmail) => userEmail === email);
 };
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));
