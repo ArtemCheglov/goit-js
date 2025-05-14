@@ -922,3 +922,20 @@
 
 // const allTags = tweets.flapMap(tweet => tweets.tags)
 // console.log(allTags);
+
+// Створіть клас Person, що містить властивості firstName та lastName.Додайте метод getFullName(), 
+// який повертає повне ім 'я у форматі "firstName lastName".
+// class Person {
+
+//     constructor(firstName, lastName) {
+//         this.firstName = firstName
+//         this.lastName = lastName
+//     }
+
+//     getFullName() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// const person1 = new Person("jonh", "kiwi")
+// console.log(person1.getFullName());

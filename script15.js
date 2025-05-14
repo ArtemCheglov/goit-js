@@ -22,7 +22,7 @@ console.log(getNamesSortedByFriendsCount(users));
 
 //4
 const getSortedUniqueSkills = users => {
-    return users.flapMap(({ skills }) => skills).sort()
+    return users.flatMap((user) => user.skills).sort()
 };
 
 console.log(getSortedUniqueSkills(users));
