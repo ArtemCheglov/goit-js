@@ -939,3 +939,30 @@
 
 // const person1 = new Person("jonh", "kiwi")
 // console.log(person1.getFullName());
+
+// const listEl = document.querySelector(".site-nav")
+// console.log(listEl);
+// list.style.backgroundColor = "yellow"
+// list.firstElementChild.firstElementChild.classList.add(site - nav__link)
+// console.log(list.firstElementChild.firstElementChild);
+
+// Зробіть всі зовнішні посилання помаранчевими, змінюючи 
+// властивість style.
+
+// const links = document.querySelectorAll("a[href]")
+// console.log(links);
+
+// links.forEach(link => {
+//     link.style.color = "orange"
+//     console.log(link);
+// });
+
+// Додайте заголовок до тексту та стилізуйте його за 
+// допомогою додаткового класу
+
+// const titleEl = document.querySelector("h1")
+// console.log(titleEl);
+// titleEl.textContent = "weh"
+// titleEl.classList.add("title")
+
+title.class.replace('title', 'title-another')
