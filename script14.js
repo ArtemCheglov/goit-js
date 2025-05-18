@@ -89,14 +89,14 @@ const users = [
 
 //1
 const getUserNames = users => {
-    return users.map((name) => name);
+    return users.map(({ name }) => name);
 };
 
 console.log(getUserNames(users));
 
 //2
 const getUsersWithEyeColor = (users, color) => {
-    return users.filter((user) => user.eyeColor === color);
+    return users.filter((user) => user.eyeColor === color)
 };
 
 console.log(getUsersWithEyeColor(users, 'blue'));
@@ -105,14 +105,14 @@ console.log(getUsersWithEyeColor(users, 'blue'));
 const getUsersWithGender = (users, gender) => {
     return users
         .filter((user) => user.gender === gender)
-        .map((name) => name);
+        .map(({ name }) => name);
 };
 
 console.log(getUsersWithGender(users, 'male'));
 
 //4
 const getInactiveUsers = users => {
-    return users.filter((user) => user.isActive === !isActive);
+    return users.filter(({ isActive }) => !isActive).map(({ name }) => name);
 };
 
 console.log(getInactiveUsers(users));
