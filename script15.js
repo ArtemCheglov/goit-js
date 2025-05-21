@@ -96,7 +96,7 @@ console.log(calculateTotalBalance(users));
 
 //2
 const getUsersWithFriend = (users, friendName) => {
-    return users.filter(({ friends }) => friends.includes(friendName)).map(({ name }) => name)
+    return users.filter(({ friends }) => friends.includes(friendName)).map((user) => user.name)
 };
 
 console.log(getUsersWithFriend(users, 'Briana Decker'));
@@ -104,7 +104,7 @@ console.log(getUsersWithFriend(users, 'Goldie Gentry'));
 
 //3
 const getNamesSortedByFriendsCount = users => {
-    return users.sort((a, b) => a.friends.lenth - b.friends.lenth).map(({ name }) => name)
+    return users.sort((a, b) => a.friends.lenth - b.friends.lenth).map((user) => user.name)
 };
 
 console.log(getNamesSortedByFriendsCount(users));
