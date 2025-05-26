@@ -1,8 +1,8 @@
 //1
 const buttonEl = document.querySelector("#button")
-const pEl = document.querySelector("#p")
+const pEl = document.querySelector("#paragraf")
 
-buttonEl.textContent = pEl.value;
+buttonEl.textContent = pEl.textContent;
 
 //2
 const img = document.querySelector(".img")
