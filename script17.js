@@ -22,6 +22,6 @@ imgEl.alt = "Sahara";
 console.log(imgEl);
 
 //4
-const firstEl = document.querySelector("list")
+const firstEl = document.querySelector(".list")
 firstEl.firstElementChild.textContent = "4";
 console.log(firstEl);
