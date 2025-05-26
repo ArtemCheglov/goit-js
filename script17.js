@@ -2,7 +2,10 @@
 const pEl = document.querySelector("#paragraf")
 const buttonEl = document.querySelector("#button")
 
-pEl.textContent = buttonEl.textContent;
+buttonEl.textContent = pEl.textContent;
+
+console.log(pEl);
+console.log(buttonEl);
 
 //2
 const img = document.querySelector(".img")
