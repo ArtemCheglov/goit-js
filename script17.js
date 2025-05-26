@@ -14,7 +14,7 @@ const link = document.querySelector(".link")
 link.href = "https://cdn.pixabay.com/photo/2025/05/16/16/14/investigation-9604083_1280.png";
 console.log(link);
 
-const imgEl = document.querySelector(".img1")
+const imgEl = document.querySelector(".image")
 imgEl.alt = "Sahara";
 console.log(imgEl);
 
