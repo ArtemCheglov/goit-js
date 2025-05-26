@@ -1,31 +1,24 @@
 //1
-batton.classList.add("batton")
-const batton = document.querySelector("button")
+const buttonEl = document.querySelector("#button")
+const pEl = document.querySelector("#p")
 
-input.classList.add("input")
-const input = document.querySelector("input")
-
-function replace() {
-    batton.textContent = input.value;
-}
-
-replace()
+buttonEl.textContent = pEl.value;
 
 //2
-// const img = document.querySelector("img")
-// img.src = "#1"
-// console.log(img);
+const img = document.querySelector(".img")
+img.src = "https://cdn.pixabay.com/photo/2025/02/09/12/19/lake-9394214_1280.jpg"
+console.log(img);
 
 //3
-// const link = document.querySelector("a[href]")
-// link.href = "#1";
-// console.log(link);
+const link = document.querySelector(".link")
+link.href = "https://cdn.pixabay.com/photo/2025/05/16/16/14/investigation-9604083_1280.png";
+console.log(link);
 
-// const imgEl = document.querySelector("img1")
-// imgEl.alt = "new";
-// console.log(imgEl);
+const imgEl = document.querySelector(".img1")
+imgEl.alt = "Sahara";
+console.log(imgEl);
 
 //4
-// const firstEl = document.querySelector("list")
-// firstEl.firstChild.textContent = "4";
-// console.log(firstEl);
+const firstEl = document.querySelector("list")
+firstEl.firstElementChild.textContent = "4";
+console.log(firstEl);
